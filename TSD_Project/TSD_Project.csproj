@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FireSharp.Serialization.JsonNet" Version="1.1.0" />
+      <PackageReference Include="MouseKeyHook" Version="5.7.1" />
+      <PackageReference Include="Notification.Wpf" Version="8.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Inter-ExtraLight.ttf" />
+      <Resource Include="Inter-ExtraLight.ttf" />
+      <None Remove="Inter-Bold.ttf" />
+      <Resource Include="Inter-Bold.ttf" />
+    </ItemGroup>
+
+</Project>
